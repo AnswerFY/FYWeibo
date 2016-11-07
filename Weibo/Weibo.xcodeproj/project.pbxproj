@@ -10,7 +10,7 @@
 		23006D381DCF9F5700AD0CA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23006D371DCF9F5700AD0CA4 /* main.m */; };
 		23006D3B1DCF9F5700AD0CA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23006D3A1DCF9F5700AD0CA4 /* AppDelegate.m */; };
 		23006D431DCF9F5700AD0CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23006D421DCF9F5700AD0CA4 /* Assets.xcassets */; };
-		234BA63D1DCFA00A00FAA0BB /* FYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234BA63C1DCFA00A00FAA0BB /* FYTabBarController.m */; };
+		234BA6401DD070AA00FAA0BB /* FYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234BA63F1DD070AA00FAA0BB /* FYTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +20,9 @@
 		23006D3A1DCF9F5700AD0CA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		23006D421DCF9F5700AD0CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23006D471DCF9F5700AD0CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		234BA63B1DCFA00A00FAA0BB /* FYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FYTabBarController.h; path = ../../../111/111/FYTabBarController.h; sourceTree = "<group>"; };
-		234BA63C1DCFA00A00FAA0BB /* FYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FYTabBarController.m; path = ../../../111/111/FYTabBarController.m; sourceTree = "<group>"; };
+		234BA63E1DD070AA00FAA0BB /* FYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTabBarController.h; sourceTree = "<group>"; };
+		234BA63F1DD070AA00FAA0BB /* FYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTabBarController.m; sourceTree = "<group>"; };
+		234BA6421DD0734F00FAA0BB /* Weibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weibo.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +57,10 @@
 			children = (
 				23006D391DCF9F5700AD0CA4 /* AppDelegate.h */,
 				23006D3A1DCF9F5700AD0CA4 /* AppDelegate.m */,
-				234BA63B1DCFA00A00FAA0BB /* FYTabBarController.h */,
-				234BA63C1DCFA00A00FAA0BB /* FYTabBarController.m */,
+				234BA63E1DD070AA00FAA0BB /* FYTabBarController.h */,
+				234BA63F1DD070AA00FAA0BB /* FYTabBarController.m */,
 				23006D421DCF9F5700AD0CA4 /* Assets.xcassets */,
+				234BA6421DD0734F00FAA0BB /* Weibo.pch */,
 				23006D471DCF9F5700AD0CA4 /* Info.plist */,
 				23006D361DCF9F5700AD0CA4 /* Supporting Files */,
 			);
@@ -144,7 +146,7 @@
 			files = (
 				23006D3B1DCF9F5700AD0CA4 /* AppDelegate.m in Sources */,
 				23006D381DCF9F5700AD0CA4 /* main.m in Sources */,
-				234BA63D1DCFA00A00FAA0BB /* FYTabBarController.m in Sources */,
+				234BA6401DD070AA00FAA0BB /* FYTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +238,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Weibo/Weibo.pch";
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.fengyi.Weibo;
@@ -248,6 +251,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Weibo/Weibo.pch";
 				INFOPLIST_FILE = Weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.fengyi.Weibo;

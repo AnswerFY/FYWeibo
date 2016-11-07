@@ -1,0 +1,24 @@
+//
+//  Weibo.pch
+//  Weibo
+//
+//  Created by 冯毅 on 16/11/7.
+//  Copyright © 2016年 冯毅. All rights reserved.
+//
+
+#ifndef Weibo_pch
+#define Weibo_pch
+
+
+//  如果有debug这个宏的话,就允许输出NSlog   ... 表示可变参数
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+//  抽取颜色
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
+
+#endif /* Weibo_pch */

@@ -20,7 +20,6 @@
     
     NSLog(@"%f",[UIScreen mainScreen].scale);
     NSLog(@"%@",NSStringFromCGRect([UIScreen mainScreen].bounds));
-    
     //  初始化一个window
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     //  设置根控制器
